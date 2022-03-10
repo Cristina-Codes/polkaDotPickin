@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Polka Dot Pickin'</title>
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- Styling Sheets -->
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
+
+</head>
+
+<body>
+	<header class="wrapper">
+		<section id="scoreTracker" class="displays scoreTracker">
+			<p>Score: <span id="score" class="score">0</span></p>
+		</section>
+
+		<!-- Title & Display Dot -->
+		<section id="title" class="title">
+			<h1>Polka Dot Pickin'</h1>
+			<div id="matching_circle" class="matching_circle"></div>
+		</section>
+
+		<!-- Countdown -->
+		<section class="displays countdown">
+			<p>Time Remaining: <span id="time" class="time">20</span></p>
+		</section>
+	</header>
+
+	<!-- Gameplay container -->
+	<main class="container wrapper">
+		<div id="intro" class="intro">
+			<p>Welcome!
+				<span>Click "Start" and a dot will show above.</span>
+				<span>Click its match wherever it goes.</span>
+				<span>You have 20 seconds to get your high score!</span>
+			</p>
+			<button id="start">Start</button>
+		</div>
+
+		<div class="circles diff1" id="diff1"></div>
+		<div class="circles diff2" id="diff2"></div>
+		<div class="circles diff3" id="diff3"></div>
+		<div class="circles diff4" id="diff4"></div>
+		<div class="circles diff5" id="diff5"></div>
+		<div class="circles match" id="match"></div>
+
+		<div id="end" class="end"></div>
+	</main>
+
+<script src="./scripts.js">
+</script>
+</body>
+</html>
