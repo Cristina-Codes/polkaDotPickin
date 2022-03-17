@@ -1,9 +1,8 @@
 let timeremaining = 20;
 let scoreCount = 0;
-// let clickCounter = 0;
-let box = document.querySelector('.container');
-let contWidth = box.offsetWidth;
-let contHeight = box.offsetHeight;
+const box = document.querySelector('.container');
+const contWidth = box.offsetWidth;
+const contHeight = box.offsetHeight;
 
 // console.log(contWidth);
 // console.log(contHeight);
@@ -27,7 +26,6 @@ if($(window).width() > 680) {
 		$("#match").css({"top" : (-(contHeight-140)*Math.random()) , "left" : ((contWidth-75)*Math.random())});
 	scoreCount++;
 	$('.score').text(scoreCount);
-	// clickCounter++;
 });
 }
 
@@ -35,7 +33,7 @@ if($(window).width() > 680) {
 function startCountdown() {
 	action = setInterval(function(){timeremaining -= 1;
 	document.getElementById("time").innerHTML = timeremaining;
-	if(timeremaining == 0){//gameover
+	if(timeremaining == 0){  //gameover
 		stopCountdown();
 	}}, 1000); 
 };
