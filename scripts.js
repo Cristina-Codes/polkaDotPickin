@@ -5,8 +5,8 @@ let box = document.querySelector('.container');
 let contWidth = box.offsetWidth;
 let contHeight = box.offsetHeight;
 
-console.log(contWidth);
-console.log(contHeight);
+// console.log(contWidth);
+// console.log(contHeight);
 
 //Start the game
 $("#start").click(function() {
