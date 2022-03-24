@@ -17,6 +17,7 @@ p {
 body {
 	background-color: #900DFF;
 	border: 5px black solid;
+	border-bottom: none;
 	height: 100vh;
 	width: 100vw;
 }
